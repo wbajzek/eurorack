@@ -215,6 +215,7 @@ const char* const rates_values[] = {
 const char* const quantization_values[] = {
     "OFF ",
     "SEMI",
+    "RRJI",
     "IONI",
     "DORI",
     "PHRY",

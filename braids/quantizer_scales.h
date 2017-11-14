@@ -38,6 +38,8 @@ const Scale scales[] = {
   { 0, 0, { } },
   // Semitones
   { 12 << 7, 12, { 0, 128, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408} },
+  // Just Intonation, Robert Rich "Geometry"
+  { 12 << 7, 12, { 0, 113, 261, 404, 486, 637, 783, 899, 1042, 1132, 1303, 1393} },
   // Ionian (From midipal/BitT source code)
   { 12 << 7, 7, { 0, 256, 512, 640, 896, 1152, 1408} },
   // Dorian (From midipal/BitT source code)
