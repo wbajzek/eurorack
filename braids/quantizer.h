@@ -55,9 +55,9 @@ class Quantizer {
   void Configure(const Scale& scale) {
     Configure(scale.notes, scale.span, scale.num_notes);
   }
+  bool enabled_;
  private:
   void Configure(const int16_t* notes, int16_t span, size_t num_notes);
-  bool enabled_;
   int16_t codebook_[128];
   int32_t codeword_;
   int32_t previous_boundary_;

@@ -239,6 +239,9 @@ void RenderBlock() {
       (pitch_delta >= 0x40 || -pitch_delta >= 0x40)) {
     trigger_detected_flag = true;
   }
+  if (quantizer.enabled_ && !trigger_flag && !trigger_detected_flag) {
+    pitch = previous_pitch;
+  }
   previous_pitch = pitch;
   
   pitch += jitter_source.Render(settings.vco_drift());
