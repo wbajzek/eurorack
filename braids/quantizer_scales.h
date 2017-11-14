@@ -54,6 +54,12 @@ const Scale scales[] = {
   { 12 << 7, 7, { 0, 256, 384, 640, 896, 1024, 1280} },
   // Locrian (From midipal/BitT source code)
   { 12 << 7, 7, { 0, 128, 384, 640, 768, 1024, 1280} },
+  // Just Intonation Minor 7 
+  { 12 << 7, 4, { 0, 404, 899, 1303} },
+  // Just Intonation Major 7 
+  { 12 << 7, 4, { 0, 486, 899, 1393} },
+  // Just Intonation Dominant 7 
+  { 12 << 7, 4, { 0, 486, 899, 1303} },
   // Blues major (From midipal/BitT source code)
   { 12 << 7, 6, { 0, 384, 512, 896, 1152, 1280} },
   // Blues minor (From midipal/BitT source code)
